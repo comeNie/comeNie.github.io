@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[linux命令(3)-pwd]]></title>
+    <url>%2F2017%2F08%2F08%2Flinux%E5%91%BD%E4%BB%A4-3-pwd%2F</url>
+    <content type="text"><![CDATA[linux命令之pwd命令命令格式pwd [选项] 参数说明一般情况下不带任何参数如果目录是链接时：格式：pwd -P 显示出实际路径，而非使用连接（link）路径。 示例 显示当前目录完成路径pwd 目录连接链接时，pwd -P 显示出实际路径，而非使用连接（link）路径；pwd显示的是连接路径]]></content>
+      <categories>
+        <category>linux每日命令</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux命令(2)-cd]]></title>
+    <url>%2F2017%2F08%2F08%2Flinux%E5%91%BD%E4%BB%A4-2-cd%2F</url>
+    <content type="text"><![CDATA[linux命令之cd命令命令格式cd [目录名] 示例 进入根目录cd / 进入上级目录cd .. 进入用户目录cd ~ 进入上一次目录cd - 把上个命令的参数作为cd参数使用cd !$]]></content>
+      <categories>
+        <category>linux每日命令</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[iterm快捷键]]></title>
     <url>%2F2017%2F08%2F07%2Fiterm%E5%BF%AB%E6%8D%B7%E9%94%AE%2F</url>
     <content type="text"><![CDATA[iterm快捷键标签 新建标签 command + t 关闭标签 command + w 切换标签 command + 数字 或 command + 左右方向键 查找 command + enter 分屏 垂直分屏 command + d 水平分屏 command + shift + d 切换屏幕 command + option + 方向键 或者 command + [ 或 command + ] 查看历史命令 command + ; 查看剪贴板历史命令 command + shift + h 移动 到行首 ctrl + a 到行尾 ctrl + e 前进后退 ctrl + f/b 编辑 清除当前行 ctrl + u 上一条命令 ctrl + p 或者 !! 搜索命令历史 ctrl + r 删除当前光标的字符 ctrl + d 删除光标之前的字符 ctrl + h 删除光标之前的单词 ctrl + w 删除到文本末尾 ctrl + k 交换光标处文本 ctrl + t 清屏 ctrl + l 或者 command + r 输入开头命令后，command + ;会自动列出输入过的命令 剪贴板历史 command + shift + h]]></content>
@@ -21,10 +43,5 @@
       <tags>
         <tag>linux</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2017%2F08%2F04%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
