@@ -327,6 +327,314 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/09/linux命令-5-rm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="comeNie">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="路人丁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/09/linux命令-5-rm/" itemprop="url">linux命令(5)-rm</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-09T22:51:45+08:00">
+                2017-08-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux每日命令/" itemprop="url" rel="index">
+                    <span itemprop="name">linux每日命令</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="linux命令之rm"><a href="#linux命令之rm" class="headerlink" title="linux命令之rm"></a>linux命令之rm</h1><h2 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h2><p><code>rm [选项] 文件</code></p>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p> -f, –force    忽略不存在的文件，从不给出提示。<br> -i, –interactive 进行交互式删除<br> -r, -R, –recursive   指示rm将参数中列出的全部目录和子目录均递归地删除。<br> -v, –verbose    详细显示进行的步骤<br>       –help     显示此帮助信息并退出<br>     –version  输出版本信息并退出  </p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><ul>
+<li>删除文件<br><code>rm test</code></li>
+<li>强制删除文件<br><code>rm -f test</code></li>
+<li>递归删除<br><code>rm -r test</code></li>
+<li>删除以log结尾文件<br><code>rm  *.log</code></li>
+<li><p>自定义回收站功能  </p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">myrm()&#123; </div><div class="line">	D=/tmp/$(date +%Y%m%d%H%M%S);</div><div class="line">	mkdir -p $D;</div><div class="line">	mv &quot;$@&quot; $D &amp;&amp; echo &quot;moved to $D ok&quot;; </div><div class="line">&#125;</div><div class="line">alias rm=&apos;myrm&apos;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/09/linux命令-4-mkdir/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="comeNie">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="路人丁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/09/linux命令-4-mkdir/" itemprop="url">linux命令(4)-mkdir</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-09T22:50:49+08:00">
+                2017-08-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux每日命令/" itemprop="url" rel="index">
+                    <span itemprop="name">linux每日命令</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="linux命令之mkdir"><a href="#linux命令之mkdir" class="headerlink" title="linux命令之mkdir"></a>linux命令之mkdir</h1><h2 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h2><p><code>mkdir [选项] 目录</code></p>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><ul>
+<li>-m, –mode=模式，设定权限&lt;模式&gt; (类似 chmod)，而不是 rwxrwxrwx 减 umask  </li>
+<li>-p, –parents  可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后,系统将自动建立好那些尚不存在的目录,即一次可以建立多个目录;  </li>
+<li>-v, –verbose  每次创建新目录都显示信息<pre><code>--help   显示此帮助信息并退出
+--version  输出版本信息并退出   
+</code></pre></li>
+</ul>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><ul>
+<li>创建一个空目录<br><code>mkdir test</code></li>
+<li>级联创建目录<br><code>mkdir -p test/test1</code></li>
+<li>创建权限为777的目录<br><code>mkdir -m 777 test</code></li>
+<li>创建新目录都显示信息<br><code>mkdir -v test</code></li>
+<li>创建项目的目录结构<br><code>mkdir mkdir -vp scf/{lib/,bin/,doc/{info,product},logs/{info,product},service/deploy/{info,product}}</code></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/08/linux命令-3-pwd/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1019,7 +1327,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
