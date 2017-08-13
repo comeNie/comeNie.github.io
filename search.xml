@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[linux命令(8)-cp]]></title>
+    <url>%2F2017%2F08%2F13%2Flinux%E5%91%BD%E4%BB%A4-8-cp%2F</url>
+    <content type="text"><![CDATA[linux命令之ls命令命令格式12cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_filecp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory 参数说明 -a，同-pPR 选项. -f，–force 如果目标文件无法打开则将其移除并重试(当-n 选项存在时则不需再选此项) -H，跟随源文件中的命令行符号链接 -i，覆盖前询问 -L,总是跟随符号链接 -n，不要覆盖已存在的文件(使前面的 -i 选项失效) -P，不跟随源文件中的符号链接 -p，等于–preserve=模式,所有权,时间戳–preserve[=属性列表 保持指定的属性(默认：模式,所有权,时间戳)，如果可能保持附加属性：环境、链接、xattr 等 -R，复制目录及目录内的所有项目 -v, 显示执行过程 -X，不要复制扩展信息。]]></content>
+      <categories>
+        <category>linux每日命令</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux命令(7)-mv]]></title>
+    <url>%2F2017%2F08%2F13%2Flinux%E5%91%BD%E4%BB%A4-7-mv%2F</url>
+    <content type="text"><![CDATA[linux命令之ls命令命令格式mv [选项] 源文件或目录 目标文件或目录 参数说明 -f ：force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖； -i ：若目标文件 (destination) 已经存在时，就会询问是否覆盖 -u ：若目标文件已经存在，且 source 比较新，才会更新(update) 示例 文件改名mv test test1 移动文件mv test.log test/ 将文件log1.txt,log2.txt,log3.txt移动到目录test3中mv log1.txt log2.txt log3.txt test3mv -t /opt/soft/test/test4/ log1.txt log2.txt log3.txt]]></content>
+      <categories>
+        <category>linux每日命令</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux命令(6)-rmdir]]></title>
+    <url>%2F2017%2F08%2F13%2Flinux%E5%91%BD%E4%BB%A4-6-rmdir%2F</url>
+    <content type="text"><![CDATA[linux命令之rmdir命令命令格式rmdir [选项] [目录] 命令说明删除目录必须为空目录，当级联删除目录时，子目录必须也为空 参数说明 -p 递归删除 -v –verbose 显示指令执行过程 示例 删除目录rmdir test 级联删除目录rmdir -p test]]></content>
+      <categories>
+        <category>linux每日命令</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[linux命令(5)-rm]]></title>
     <url>%2F2017%2F08%2F09%2Flinux%E5%91%BD%E4%BB%A4-5-rm%2F</url>
     <content type="text"><![CDATA[linux命令之rm命令格式rm [选项] 文件 参数 -f, –force 忽略不存在的文件，从不给出提示。 -i, –interactive 进行交互式删除 -r, -R, –recursive 指示rm将参数中列出的全部目录和子目录均递归地删除。 -v, –verbose 详细显示进行的步骤 –help 显示此帮助信息并退出 –version 输出版本信息并退出 示例 删除文件rm test 强制删除文件rm -f test 递归删除rm -r test 删除以log结尾文件rm *.log 自定义回收站功能 123456myrm()&#123; D=/tmp/$(date +%Y%m%d%H%M%S); mkdir -p $D; mv &quot;$@&quot; $D &amp;&amp; echo &quot;moved to $D ok&quot;; &#125;alias rm=&apos;myrm&apos;]]></content>
